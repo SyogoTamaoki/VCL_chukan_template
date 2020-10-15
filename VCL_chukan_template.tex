@@ -1,0 +1,58 @@
+\documentclass[a4j]{jarticle}
+\pagestyle{empty}
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\columnsep}{6mm}
+\setlength{\topskip}{10mm}
+\setlength\textfloatsep{2truemm}
+\setlength\abovecaptionskip{1truemm}
+\usepackage{color}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{bm}
+\usepackage{ascmac}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{comment}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{here}
+\usepackage{setspace}
+\usepackage[top=25truemm,bottom=25truemm,left=20truemm,right=20truemm]{geometry}
+
+\begin{document}
+
+%1段表示
+\twocolumn[
+\begin{center}
+  \begin{spacing}{1.1}
+    \large
+    \textgt{Title (Japanese)}\\
+    \normalsize
+    Title (English)\\
+    Name (Japanse：山田　太郎)\\
+    Name (English：Taro YAMADA)\\
+    東京農工大学　工学府情報工学専攻/工学部情報工学科/知能情報システム工学科　n年\\
+    Mail Adress\\
+  \end{spacing}
+  \vspace{2mm}
+  {\bf Abstract}
+\end{center}
+\vspace{-4mm}
+
+%% ABSTRACT 100-150 words
+\input{inputfiles/abstract.tex}
+]
+
+\vspace{2mm}
+
+%本文
+% 1章
+\section{はじめに}
+\label{1_introduction}
+\input{inputfiles/1_introduction.tex}
+
+
+% 参考文献
+\small
+\input{inputfiles/reference.tex}
+
+\end{document}
